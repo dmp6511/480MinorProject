@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minor Project - Perry</title>
+    <title>Minor Project - De'Andre Perry</title>
 
     <!-- A-Frame -->
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
@@ -16,6 +16,7 @@
             init: function () {
                 this.el.addEventListener('click', e => {
                     alert(this.el.id + ' model clicked!');
+                    
                 });
             }
         });
@@ -29,8 +30,8 @@
         <a-camera gps-new-camera="gpsMinDistance: 5"></a-camera>
 
         <!-- Cardboard Buddy - Moved further to the right -->
-        <a-entity id="cardboardBuddy" gps-new-entity-place="latitude: 43.08516; longitude: -77.67698"
-            gltf-model="../assets/buddy/scene.gltf" scale="5 5 5" position="-10 0 40" clicker>
+        <a-entity id="cardboardBuddy" gps-new-entity-place="latitude: 43.08516; longitude: -77.67684"
+            gltf-model="../assets/buddy/scene.gltf" scale="5 5 5" position="0 0 20" clicker>
         </a-entity>
 
     </a-scene>
