@@ -29,11 +29,11 @@
     <a-scene vr-mode-ui="enabled: false" arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false"
         renderer="antialias: true; alpha: true">
 
-        <a-camera gps-new-camera="gpsMinDistance: 5"></a-camera>
+        <a-camera gps-new-camera="gpsMinDistance: 1"></a-camera>
 
         <!-- Cardboard Buddy -->
         <a-entity id="cardboardBuddy" gps-new-entity-place="latitude: 43.08516; longitude: -77.67699"
-            gltf-model="../assets/buddy/cardboard_buddy.glb" scale="4 4 4" position="10 -3 10" clicker>
+            gltf-model="../assets/buddy/cardboard_buddy.glb" scale="4 4 4" position="20 -3 10" clicker>
         </a-entity>
 
         <!-- Vehicle -->
