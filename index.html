@@ -28,12 +28,17 @@
         <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
 
         <!-- CAD Display Case -->
-        
-<!--         Show the carboard buddy close to his vehicle -->
-        <a-entity material='color: green' geometry='primitive: box'
-            gps-new-entity-place="latitude: 43.08516; longitude: -77.67698" scale="5 5 5"></a-entity>
 
-<!--         Place piles of boxes on near the displays -->
+        <!--         Show the carboard buddy close to his vehicle -->
+        < <a-entity id='cardboardBuddy' gps-new-entity-place="latitude: 43.08516; longitude: -77.67698"
+            gltf-model='../assets/buddy/scene.gltf' scale="5 5 5">
+            </a-entity>>
+
+            <!-- the vehicle (next to buddy) -->
+            <a-entity id='vehicle' gps-new-entity-place="latitude: 43.08516; longitude: -77.67698"
+                gltf-model='../assets/vehicle/scene.gltf' scale="5 5 5">
+
+            <!--         Place piles of boxes on near the displays -->
     </a-scene>
 </body>
 
