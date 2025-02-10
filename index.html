@@ -11,6 +11,9 @@
         AFRAME.registerComponent('clicker', {
             init: function () {
                 this.el.addEventListener('click', e => {
+
+                    // when the models are clicked, the particle effects will appear
+                    // perhaps play a sound when a pile of boxes is clicked on?
                     alert('Model clicked!');
                 });
             }
@@ -25,8 +28,12 @@
         <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
 
         <!-- CAD Display Case -->
+        
+<!--         Show the carboard buddy close to his vehicle -->
         <a-entity material='color: green' geometry='primitive: box'
             gps-new-entity-place="latitude: 43.08516; longitude: 77.67698" scale="5 5 5"></a-entity>
+
+<!--         Place piles of boxes on near the displays -->
     </a-scene>
 </body>
 
